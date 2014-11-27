@@ -30,7 +30,7 @@ Rundiv only needs to follow a simple pattern. Here is an example:
   </ol>
 </div>
 <!--alternative-->
-```
+```javascript
 Above is the initial required structure– a series of elements wrapped in two containers. Place any content you want within the items. The containing div will need to be passed to the Rundiv function like so:
 ```javascript
 var elem = document.getElementById('rundiv');
@@ -68,7 +68,9 @@ Also Rundiv needs just a few styles added to your stylesheet:
 }
 ```
 #设置
+
 ---
+
  - havNav Boolean (defaule:false) - 如果你要使用导航栏 那么必须为true
  - startSlide Integer (default:1) - 从第几张开始
  - speed Integer (default:300) - 切换速度
@@ -78,7 +80,9 @@ Also Rundiv needs just a few styles added to your stylesheet:
  - stopPropagation Boolean (default:false) - 是否阻止事件冒泡
  - callback Function - 滚动开始时的回调函数
  - transitionEnd Function - 滚动结束后的回调函数
+
 #接口
+
 ---
 Rundiv也提供了一些借口供使用此插件的开发者调用：
 - linkNav("id") 创建一个与你的轮播图相连的导航。（id为导航ol/ul的‘id’）
