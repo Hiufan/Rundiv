@@ -12,7 +12,7 @@
 ---
 
 Rundiv only needs to follow a simple pattern. Here is an example:
-```
+```html
 <div id='rundiv'>
   <div class='wrap'>
     <div></div>
@@ -32,7 +32,7 @@ Rundiv only needs to follow a simple pattern. Here is an example:
 <!--alternative-->
 ```
 Above is the initial required structure– a series of elements wrapped in two containers. Place any content you want within the items. The containing div will need to be passed to the Rundiv function like so:
-```
+```javascript
 var elem = document.getElementById('rundiv');
 window.rundiv = Rundiv(elem, {
    hasNav:true,
@@ -51,7 +51,7 @@ rundiv.linkNav("rundivNav");    //the id of the ol or ul (if you use this,please
 I always place this at the bottom of the page, externally, to verify the page is ready.
 
 Also Rundiv needs just a few styles added to your stylesheet:
-```
+```css
 #rundiv {
   overflow: hidden;
   visibility: hidden;
